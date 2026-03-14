@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习笔记 | 我的个人主页</title>
+    <meta name="description" content="我的学习笔记索引与专题归档。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">WXX · 个人站</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">菜单</button>
+      <nav id="siteNav" class="site-nav" data-open="false">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="about.html" data-nav="about">自我介绍</a>
+        <a href="notes.html" data-nav="notes">学习笔记</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <h1>学习笔记</h1>
+        <p>这是你的笔记索引页。每个专题可以在 notes 目录里维护独立页面。</p>
+      </section>
+
+      <section class="panel">
+        <h2>如何添加一篇笔记</h2>
+        <ol>
+          <li>复制 notes/template.html 并重命名，例如 notes/javascript-array.html。</li>
+          <li>在新页面中填写标题、摘要和正文内容。</li>
+          <li>回到本页，在下方卡片区域新增一个链接。</li>
+        </ol>
+      </section>
+
+      <section class="panel-grid two-columns">
+        <article class="panel note-card">
+          <p class="note-label">示例笔记</p>
+          <h2>如何组织一篇学习笔记</h2>
+          <p>结构建议：问题背景、核心知识点、示例代码、踩坑记录、复盘总结。</p>
+          <a class="inline-link" href="notes/template.html">打开模板页</a>
+        </article>
+
+        <article class="panel note-card">
+          <p class="note-label">待添加</p>
+          <h2>你的下一篇文章标题</h2>
+          <p>这里是占位卡片，后续可以继续复制拓展。</p>
+          <a class="inline-link" href="#">替换为真实链接</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 你的名字 · 构建于 GitHub Pages</p>
+    </footer>
+  </body>
+</html>

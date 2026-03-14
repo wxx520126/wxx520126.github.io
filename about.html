@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自我介绍 | 我的个人主页</title>
+    <meta name="description" content="个人介绍、技能栈、学习路线与联系信息。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">WXX · 个人站</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">菜单</button>
+      <nav id="siteNav" class="site-nav" data-open="false">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="about.html" data-nav="about">自我介绍</a>
+        <a href="notes.html" data-nav="notes">学习笔记</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <h1>关于我</h1>
+        <p>这里是你的个人介绍主页面，建议从「我是谁」「我在做什么」「我想去哪里」三个问题展开。</p>
+      </section>
+
+      <section class="panel-grid two-columns">
+        <article class="panel">
+          <h2>基本信息</h2>
+          <ul>
+            <li>昵称/姓名：待填写</li>
+            <li>城市：待填写</li>
+            <li>研究方向：待填写</li>
+            <li>当前状态：待填写</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h2>技能栈</h2>
+          <ul>
+            <li>语言：待填写</li>
+            <li>框架：待填写</li>
+            <li>工具：待填写</li>
+            <li>其他：待填写</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>学习时间线</h2>
+        <ol class="timeline">
+          <li><strong>阶段 1：</strong>填写你最早的学习起点。</li>
+          <li><strong>阶段 2：</strong>填写转折点（课程、项目、比赛）。</li>
+          <li><strong>阶段 3：</strong>填写当前聚焦的能力方向。</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 你的名字 · 构建于 GitHub Pages</p>
+    </footer>
+  </body>
+</html>
