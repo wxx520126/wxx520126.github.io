@@ -8,7 +8,7 @@
   const navMap = [
     { key: "home", match: /(?:^|\/)index\.html$|\/$/ },
     { key: "about", match: /about\.html$/ },
-    { key: "notes", match: /notes\.html$|\/notes\// }
+    { key: "notes", match: /notes\.html$|note\.html$|\/notes\// }
   ];
 
   for (const item of navMap) {

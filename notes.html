@@ -31,31 +31,38 @@
       <section class="panel">
         <h2>如何添加一篇笔记</h2>
         <ol>
-          <li>复制 notes/template.html 并重命名，例如 notes/javascript-array.html。</li>
-          <li>在新页面中填写标题、摘要和正文内容。</li>
-          <li>回到本页，在下方卡片区域新增一个链接。</li>
+          <li>把 Markdown 文件放到 notes 目录，例如 notes/new-note.md。</li>
+          <li>在本页新增一个卡片，链接格式为 note.html?file=notes/xxx.md&title=标题。</li>
+          <li>推送到 GitHub 后，GitHub Pages 会自动更新。</li>
         </ol>
       </section>
 
       <section class="panel-grid two-columns">
         <article class="panel note-card">
-          <p class="note-label">示例笔记</p>
-          <h2>如何组织一篇学习笔记</h2>
-          <p>结构建议：问题背景、核心知识点、示例代码、踩坑记录、复盘总结。</p>
-          <a class="inline-link" href="notes/template.html">打开模板页</a>
+          <p class="note-label">AI 游戏</p>
+          <h2>经典游戏 AI</h2>
+          <p>整理德州扑克、斗地主、围棋、星际争霸等博弈 AI 的核心方法与差异。</p>
+          <a class="inline-link" href="note.html?file=notes/%E7%BB%8F%E5%85%B8%E6%B8%B8%E6%88%8Fai.md&title=%E7%BB%8F%E5%85%B8%E6%B8%B8%E6%88%8FAI">阅读全文</a>
         </article>
 
         <article class="panel note-card">
-          <p class="note-label">待添加</p>
-          <h2>你的下一篇文章标题</h2>
-          <p>这里是占位卡片，后续可以继续复制拓展。</p>
-          <a class="inline-link" href="#">替换为真实链接</a>
+          <p class="note-label">算法刷题</p>
+          <h2>LeetCode 笔记</h2>
+          <p>覆盖 C++ 常用容器、字符串处理、树与图、刷题总结等高频知识点。</p>
+          <a class="inline-link" href="note.html?file=notes/leetcode_notes.md&title=LeetCode%20%E7%AC%94%E8%AE%B0">阅读全文</a>
+        </article>
+
+        <article class="panel note-card">
+          <p class="note-label">强化学习</p>
+          <h2>RL 课程笔记</h2>
+          <p>从贝尔曼公式到 DQN、Actor-Critic，系统梳理强化学习核心理论。</p>
+          <a class="inline-link" href="note.html?file=notes/rl%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0.md&title=RL%20%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0">阅读全文</a>
         </article>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> 你的名字 · 构建于 GitHub Pages</p>
+      <p>© <span id="year"></span> wxx · 构建于 GitHub Pages</p>
     </footer>
   </body>
 </html>
